@@ -1,0 +1,133 @@
+# Generic
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+*.stackdump
+*.log
+
+# OS generated files
+Icon?
+*.lnk
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+*.eggs/
+pip-wheel-metadata/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+.env/
+.env
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Packaging / distribution
+build/
+dist/
+*.tar.gz
+*.whl
+
+# Test / coverage
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# IDEs / editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+# If you track notebooks, remove the previous line and add exceptions for the tracked files:
+# !notebooks/keep_this_notebook.ipynb
+
+# Data, models, artifacts
+data/
+datasets/
+raw_data/
+processed_data/
+outputs/
+results/
+models/
+saved_models/
+checkpoints/
+artifacts/
+weights/
+*.ckpt
+*.pt
+*.pth
+*.bin
+
+# Caches & runtime files
+.cache/
+.pyre/
+.mypy_cache/
+ruff_cache/
+__pypackages__/
+
+# Credentials & secrets
+.env.local
+.env.*.local
+*.secret
+*.pem
+*.key
+*.crt
+credentials.json
+service_account.json
+google-credentials.json
+aws_credentials
+aws_credentials.*
+
+# Docker
+docker-compose.override.yml
+.docker/
+
+# CI/CD
+.vagrant/
+.heroku/
+*.envrc
+
+# Misc
+*.iml
+*.class
+*.jar
+*.war
+
+# Allow explicit exceptions (uncomment and modify if needed)
+# !/README.md
+# !/requirements.txt
+# !/pyproject.toml
+# !/package.json
