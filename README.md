@@ -39,6 +39,7 @@ The main orchestrator coordinates the fact-checking pipeline, managing the flow 
 
 1. **Claim Text Extractor Agent** (`claim_text_extractor_agent`)
    - **Role**: Identifies and extracts specific factual claims from input text
+   - **Tools**: Google Search API (to extract text from provided web links)
    - **Purpose**: Isolates verifiable statements from longer narratives or complex texts
    - **Output**: Clean, isolated claims ready for analysis
 

@@ -10,7 +10,7 @@ from google.genai import types
 #    GOOGLE_API_KEY=PASTE_YOUR_ACTUAL_API_KEY_HERE
 # 2. This will override the default Vertex AI configuration
 _, quota_project_id = google.auth.default()
-quota_project_id = 'gen-lang-client-0588241039'
+
 os.environ.setdefault("GOOGLE_CLOUD_PROJECT", quota_project_id)
 os.environ.setdefault("GOOGLE_CLOUD_LOCATION", "global")
 os.environ.setdefault("GOOGLE_GENAI_USE_VERTEXAI", "True")

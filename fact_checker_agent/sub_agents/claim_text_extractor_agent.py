@@ -1,4 +1,5 @@
 from google.adk.agents import LlmAgent
+from google.adk.tools.google_search_tool import google_search
 
 from fact_checker_agent.config import config
 
@@ -24,5 +25,6 @@ claim_text_extractor_agent = LlmAgent(
     Always ensure that the extracted text is accurate and complete to facilitate effective fact-checking.
     If you cannot extract any text, return an empty string.
     """,
+    tools=[google_search],
     output_key="extracted_text",
 )
