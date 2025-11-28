@@ -1,8 +1,8 @@
 import os
 from dataclasses import dataclass
 
-from google.genai import types
 import google.auth
+from google.genai import types
 
 # To use AI Studio credentials:
 # 1. Create a .env file in the /app directory with:

@@ -3,19 +3,18 @@ from pathlib import Path
 
 from google.adk.agents import SequentialAgent
 from google.adk.apps.app import App, EventsCompactionConfig
-from google.adk.sessions import DatabaseSessionService
-from google.adk.runners import Runner
-from google.adk.models import Gemini
 from google.adk.apps.llm_event_summarizer import LlmEventSummarizer
+from google.adk.models import Gemini
+from google.adk.runners import Runner
+from google.adk.sessions import DatabaseSessionService
 
 from fact_checker_agent.config import config
-
 from fact_checker_agent.sub_agents import (
-    claim_text_extractor_agent,
     claim_analysis_agent,
+    claim_check_agent,
     claim_research_agent,
+    claim_text_extractor_agent,
     source_reliability_agent,
-    claim_check_agent
 )
 
 # Configure logging

@@ -1,5 +1,6 @@
 from google.adk.agents import LlmAgent
 from google.adk.tools.google_search_tool import google_search
+
 from fact_checker_agent.config import config
 
 source_reliability_agent = LlmAgent(
